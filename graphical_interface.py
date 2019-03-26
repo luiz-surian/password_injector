@@ -1,0 +1,102 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ui_main.ui'
+#
+# Created by: PyQt5 UI code generator 5.12
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(400, 233)
+        MainWindow.setMinimumSize(QtCore.QSize(400, 1))
+        MainWindow.setMaximumSize(QtCore.QSize(400, 270))
+        font = QtGui.QFont()
+        font.setFamily("Lato")
+        font.setPointSize(9)
+        MainWindow.setFont(font)
+        self.txt_pass = QtWidgets.QLineEdit(MainWindow)
+        self.txt_pass.setGeometry(QtCore.QRect(10, 200, 380, 22))
+        self.txt_pass.setObjectName("txt_pass")
+        self.combo_passtype = QtWidgets.QComboBox(MainWindow)
+        self.combo_passtype.setGeometry(QtCore.QRect(10, 90, 380, 22))
+        self.combo_passtype.setObjectName("combo_passtype")
+        self.btn_generate = QtWidgets.QPushButton(MainWindow)
+        self.btn_generate.setGeometry(QtCore.QRect(239, 120, 151, 26))
+        self.btn_generate.setObjectName("btn_generate")
+        self.nb_chars = QtWidgets.QSpinBox(MainWindow)
+        self.nb_chars.setGeometry(QtCore.QRect(170, 120, 60, 26))
+        self.nb_chars.setMinimum(7)
+        self.nb_chars.setMaximum(99999)
+        self.nb_chars.setProperty("value", 12)
+        self.nb_chars.setObjectName("nb_chars")
+        self.lbl_chars = QtWidgets.QLabel(MainWindow)
+        self.lbl_chars.setGeometry(QtCore.QRect(10, 120, 150, 26))
+        font = QtGui.QFont()
+        font.setBold(False)
+        font.setWeight(50)
+        self.lbl_chars.setFont(font)
+        self.lbl_chars.setObjectName("lbl_chars")
+        self.lbl_title = QtWidgets.QLabel(MainWindow)
+        self.lbl_title.setGeometry(QtCore.QRect(10, 10, 381, 31))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.lbl_title.setFont(font)
+        self.lbl_title.setAlignment(QtCore.Qt.AlignCenter)
+        self.lbl_title.setObjectName("lbl_title")
+        self.line = QtWidgets.QFrame(MainWindow)
+        self.line.setGeometry(QtCore.QRect(10, 160, 380, 3))
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.lbl_subtitle_1 = QtWidgets.QLabel(MainWindow)
+        self.lbl_subtitle_1.setGeometry(QtCore.QRect(10, 60, 381, 26))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.lbl_subtitle_1.setFont(font)
+        self.lbl_subtitle_1.setObjectName("lbl_subtitle_1")
+        self.line_2 = QtWidgets.QFrame(MainWindow)
+        self.line_2.setGeometry(QtCore.QRect(10, 50, 380, 3))
+        self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_2.setObjectName("line_2")
+        self.lbl_subtitle_2 = QtWidgets.QLabel(MainWindow)
+        self.lbl_subtitle_2.setGeometry(QtCore.QRect(10, 170, 270, 26))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.lbl_subtitle_2.setFont(font)
+        self.lbl_subtitle_2.setObjectName("lbl_subtitle_2")
+        self.lbl_subtitle_3 = QtWidgets.QLabel(MainWindow)
+        self.lbl_subtitle_3.setGeometry(QtCore.QRect(289, 170, 100, 26))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        font.setBold(False)
+        font.setWeight(50)
+        self.lbl_subtitle_3.setFont(font)
+        self.lbl_subtitle_3.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lbl_subtitle_3.setObjectName("lbl_subtitle_3")
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Password Injector"))
+        self.btn_generate.setText(_translate("MainWindow", "Gerar Senha"))
+        self.lbl_chars.setText(_translate("MainWindow", "Quantidade de Caracteres"))
+        self.lbl_title.setText(_translate("MainWindow", "Injeção Automática de Senhas"))
+        self.lbl_subtitle_1.setText(_translate("MainWindow", "Gerador de Senha Aleatória"))
+        self.lbl_subtitle_2.setText(_translate("MainWindow", "Senha a ser Injetada"))
+        self.lbl_subtitle_3.setText(_translate("MainWindow", "Pressione <b>F8</b>"))
+
+
