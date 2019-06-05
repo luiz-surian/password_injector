@@ -58,8 +58,7 @@ def resource_path(relative_path):
 
 # Variáveis Globais.
 path_default = resource_path('dependencies')
-path_images = os.path.join(path_default, 'images')
-path_icon = os.path.join(path_images, 'favicon.ico')
+path_icon = os.path.join(path_default, 'favicon.ico')
 
 wait = time.sleep
 
